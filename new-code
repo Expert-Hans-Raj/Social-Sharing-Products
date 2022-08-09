@@ -1,0 +1,48 @@
+<ul class="social_share_icon">
+
+   <span class="share_title">Share</span>
+      
+      <li>
+         <a target="_blank" href="//www.facebook.com/sharer.php?u={{shop.url}}/{{ product.url }}" class="btn btn--small btn--share share-instagram" title="Facebook">
+           <img src="https://cdn.shopify.com/s/files/1/0611/6841/9010/files/icons8-facebook-circled-60.png?v=1655381130">
+         </a>
+      </li>
+      <li>
+         <a target="_blank" href="//twitter.com/share?text={{ product.title | url_param_escape }}&amp;url={{ shop.url | append: product.url}}" class="twitt btn btn--small btn--share share-instagram" title="Twitter">
+           <img src="https://cdn.shopify.com/s/files/1/0611/6841/9010/files/icons8-twitter-circled-50_1.png?v=1655381173">
+         </a>
+      </li>
+     <li>      
+      <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ product.title | url_param_escape }}&amp;url={{ shop.url | append: product.url}}"><img src="https://cdn.shopify.com/s/files/1/0611/6841/9010/files/icons8-linkedin-circled-64.png?v=1655381154">
+      </a>
+     </li>
+
+</ul>
+
+<style>
+
+ul.social_share_icon li {
+    list-style: none;
+    display: inline-flex;
+}
+
+span.share_title {
+    width: 100%;
+    float: left;
+}
+
+ul.social_share_icon {
+    padding-left: 0 !important;
+}
+
+
+ul.social_share_icon li img:hover {
+    border: 4px solid #D13139;
+}
+ul.social_share_icon li img {
+    width: 40px;
+    object-fit: fill;
+    border: 2px solid transparent;
+    border-radius: 100px;
+}
+</style>
